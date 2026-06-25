@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bus Stop Management System</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#0077cc;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+nav{
+    background:#004d99;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.hero{
+    text-align:center;
+    padding:60px;
+    background:#e6f2ff;
+}
+
+section{
+    padding:30px;
+}
+
+h2{
+    color:#0077cc;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+    text-align:center;
+}
+
+table{
+    width:90%;
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+table,th,td{
+    border:1px solid black;
+}
+
+th{
+    background:#0077cc;
+    color:white;
+}
+
+th,td{
+    padding:10px;
+    text-align:center;
+}
+
+form{
+    width:60%;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    background:#0077cc;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+footer{
+    background:#004d99;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Bus Stop Management System</h1>
+    <p>Smart Transportation Information Portal</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Bus Routes</a>
+    <a href="#">Timings</a>
+    <a href="#">Facilities</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to Bus Stop Management System</h2>
+    <p>Providing Bus Route Information and Timings for Passengers</p>
+</section>
+
+<section>
+    <h2>Bus Stop Facilities</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Waiting Area</h3>
+            <p>Comfortable seating for passengers.</p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Display</h3>
+            <p>Live bus timing information.</p>
+        </div>
+
+        <div class="card">
+            <h3>Ticket Counter</h3>
+            <p>Easy ticket booking service.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Bus Timings</h2>
+
+    <table>
+        <tr>
+            <th>Bus Number</th>
+            <th>Route</th>
+            <th>Departure Time</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Visakhapatnam - Anakapalli</td>
+            <td>08:00 AM</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Anakapalli - Yelamanchili</td>
+            <td>10:00 AM</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Yelamanchili - Visakhapatnam</td>
+            <td>01:00 PM</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Passenger Feedback</h2>
+
+    <form>
+        <input type="text" placeholder="Enter Your Name" required>
+        <input type="email" placeholder="Enter Your Email" required>
+        <textarea rows="5" placeholder="Enter Feedback"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Bus Stop Management System</p>
+    <p>Developed by Prasanna Tummapala</p>
+</footer>
+
+</body>
+</html>
